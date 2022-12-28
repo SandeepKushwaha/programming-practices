@@ -23,7 +23,7 @@ public class Array_BinarySearch {
             }
 
             int key = sc.nextInt();
-            Solution g = new Solution();
+            Array_BinarySearchSolution g = new Array_BinarySearchSolution();
             System.out.println(g.binarysearch(arr, n, key));
             T--;
         }
@@ -35,7 +35,7 @@ public class Array_BinarySearch {
 
 // User function Template for Java
 
-class Solution {
+class Array_BinarySearchSolution {
     int binarysearch(int[] arr, int n, int key) {
 
         Arrays.sort(arr); // sorting array if array is unsorted
