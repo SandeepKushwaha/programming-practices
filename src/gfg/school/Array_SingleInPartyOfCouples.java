@@ -10,7 +10,7 @@ import java.io.InputStreamReader;
 
 
 //{ Driver Code Starts
-public class Array_PartyOfCouples {
+public class Array_SingleInPartyOfCouples {
     public static void main(String[] args) throws IOException {
         BufferedReader read = new BufferedReader(new InputStreamReader(System.in));
         int t = Integer.parseInt(read.readLine());
@@ -21,7 +21,7 @@ public class Array_PartyOfCouples {
             for (int i = 0; i < N; i++)
                 arr[i] = Integer.parseInt(input_line[i]);
 
-            System.out.println(Array_PartyOfCouplesSolution.findSingle(N, arr));
+            System.out.println(Array_SingleInPartyOfCouplesSolution.findSingle(N, arr));
         }
     }
 }
@@ -30,7 +30,7 @@ public class Array_PartyOfCouples {
 
 //User function Template for Java
 
-class Array_PartyOfCouplesSolution {
+class Array_SingleInPartyOfCouplesSolution {
     static int findSingle(int N, int[] arr) {
 
         // Case 1: checking current and next element until the last position is same or not in odd positions
