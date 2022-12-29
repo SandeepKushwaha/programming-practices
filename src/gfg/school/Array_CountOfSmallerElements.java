@@ -14,7 +14,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class CountOfSmallerElements {
+public class Array_CountOfSmallerElements {
     public static void main(String[] args) throws IOException {
         BufferedReader br =
                 new BufferedReader(new InputStreamReader(System.in));
@@ -30,7 +30,7 @@ public class CountOfSmallerElements {
             }
             long k = Long.parseLong(br.readLine().trim());
 
-            CountOfSmallerElementsCompute obj = new CountOfSmallerElementsCompute();
+            Array_CountOfSmallerElementsCompute obj = new Array_CountOfSmallerElementsCompute();
             System.out.println(obj.countOfElements(a, n, k));
 
         }
@@ -44,7 +44,7 @@ public class CountOfSmallerElements {
 //User function Template for Java
 
 
-class CountOfSmallerElementsCompute {
+class Array_CountOfSmallerElementsCompute {
     public long countOfElements(long[] arr, long ignoredN, long x) {
         long count = 0;
         for (long item : arr) {

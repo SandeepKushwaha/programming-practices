@@ -11,7 +11,7 @@ package gfg.school;
 
 import java.util.Scanner;
 
-public class FindIndexOccurrences {
+public class Array_FindIndexOccurrences {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
@@ -22,7 +22,7 @@ public class FindIndexOccurrences {
                 arr[i] = sc.nextInt();
             }
             int key = sc.nextInt();
-            FindIndexOccurrencesSolution ob = new FindIndexOccurrencesSolution();
+            Array_FindIndexOccurrencesSolution ob = new Array_FindIndexOccurrencesSolution();
             int[] ar = ob.findIndex(arr, n, key);
             System.out.println(ar[0] + " " + ar[1]);
         }
@@ -33,7 +33,7 @@ public class FindIndexOccurrences {
 
 //User function Template for Java
 
-class FindIndexOccurrencesSolution {
+class Array_FindIndexOccurrencesSolution {
     // Function to find starting and end index
     /*static*/ int[] findIndex(int[] a, int N, int key) {
 

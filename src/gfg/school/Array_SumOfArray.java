@@ -13,7 +13,7 @@ package gfg.school;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-class SumOfArray {
+public class Array_SumOfArray {
     // Driver code
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -26,7 +26,7 @@ class SumOfArray {
                 arr[i] = Integer.parseInt(str[i]);
             }
 
-            int ans = new SumOfArraySolution().sum(arr, n);
+            int ans = new Array_SumOfArraySolution().sum(arr, n);
 
             System.out.println(ans);
         }
@@ -37,7 +37,7 @@ class SumOfArray {
 
 // User function Template for Java
 
-class SumOfArraySolution {
+class Array_SumOfArraySolution {
     int sum(int[] arr, int ignoredN) {
         int sum = 0;
         for (int item : arr) {

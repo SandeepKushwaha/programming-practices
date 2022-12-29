@@ -12,7 +12,7 @@ package gfg.school;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class SwapKthElements {
+public class Array_SwapKthElements {
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int tc = Integer.parseInt(br.readLine().trim());
@@ -27,7 +27,7 @@ public class SwapKthElements {
                 arr[i] = Integer.parseInt(inputLine[i]);
             }
 
-            new SwapKthElementsSolution().swapKth(arr, n, k);
+            new Array_SwapKthElementsSolution().swapKth(arr, n, k);
             for (int i = 0; i < n; i++) {
                 System.out.print(arr[i] + " ");
             }
@@ -41,7 +41,7 @@ public class SwapKthElements {
 //User function Template for Java
 
 
-class SwapKthElementsSolution {
+class Array_SwapKthElementsSolution {
     void swapKth(int[] arr, int n, int k) {
         int temp = arr[k - 1];
         arr[k-1] = arr[n-k];
