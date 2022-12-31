@@ -1,10 +1,10 @@
 package gfg.school;
 
 /*
-*
-* problem : https://practice.geeksforgeeks.org/problems/java-convert-string-to-lowercase2313/1
-*
-* */
+ *
+ * problem : https://practice.geeksforgeeks.org/problems/java-convert-string-to-lowercase2313/1
+ *
+ * */
 
 //{ Driver Code Starts
 // Initial template for Java
@@ -38,18 +38,18 @@ class StingLowerCaseSolution {
         // conventional way to doing this
         StringBuilder text = new StringBuilder();
         // String text = "";
-         for(int i = 0; i < S.length(); i++) {
-             if (S.charAt(i) >= 97) {
-                 text.append(S.charAt(i));
-                 // text += S.charAt(i);
-             } else {
-                 int ascii = (int) S.charAt(i) + 32;
-                 text.append((char) ascii);
-                 // text += (char) ascii;
-             }
-         }
-         return text.toString();
-         // return text;
+        for (int i = 0; i < S.length(); i++) {
+            if (S.charAt(i) >= 97) {
+                text.append(S.charAt(i));
+                // text += S.charAt(i);
+            } else {
+                int ascii = (int) S.charAt(i) + 32;
+                text.append((char) ascii);
+                // text += (char) ascii;
+            }
+        }
+        return text.toString();
+        // return text;
     }
 }
 

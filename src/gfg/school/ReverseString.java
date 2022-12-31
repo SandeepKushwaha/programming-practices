@@ -1,10 +1,10 @@
 package gfg.school;
 
 /*
-*
-* problem : https://practice.geeksforgeeks.org/problems/java-reverse-a-string0416/1
-*
-* */
+ *
+ * problem : https://practice.geeksforgeeks.org/problems/java-reverse-a-string0416/1
+ *
+ * */
 
 import java.io.BufferedReader;
 import java.io.IOException;

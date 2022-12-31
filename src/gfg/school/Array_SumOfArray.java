@@ -1,10 +1,10 @@
 package gfg.school;
 
 /*
-*
-* problem : https://practice.geeksforgeeks.org/problems/sum-of-array2326/1
-*
-* */
+ *
+ * problem : https://practice.geeksforgeeks.org/problems/sum-of-array2326/1
+ *
+ * */
 
 //{ Driver Code Starts
 // Initial Template for Java

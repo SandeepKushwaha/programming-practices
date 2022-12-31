@@ -31,7 +31,7 @@ class ReverseDigitsSolution {
             long reverse = 0;
             long temp = n;
             while (temp > 0) {
-                reverse = (reverse*10) + temp%10;
+                reverse = (reverse * 10) + temp % 10;
                 temp /= 10;
             }
             return reverse;

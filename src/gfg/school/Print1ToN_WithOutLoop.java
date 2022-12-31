@@ -49,8 +49,7 @@ public class Print1ToN_WithOutLoop {
 class Print1ToN_WithOutLoop_Solution {
     public void printNos(int N) {
         //int i = N;
-        if (N <= 0)
-            return;
+        if (N <= 0) return;
         printNos(N - 1);
         System.out.print(N + " ");
     }

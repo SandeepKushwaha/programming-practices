@@ -8,7 +8,7 @@ package gfg.school;
 
 //{ Driver Code Starts
 
-import java.util.*;
+import java.util.Scanner;
 
 public class Array_PalindromicArray {
     public static void main(String[] args) {

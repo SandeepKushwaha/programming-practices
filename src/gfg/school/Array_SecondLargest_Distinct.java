@@ -4,10 +4,10 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 /*
-*
-* Problem : https://practice.geeksforgeeks.org/problems/second-largest3735/1
-*
-* */
+ *
+ * Problem : https://practice.geeksforgeeks.org/problems/second-largest3735/1
+ *
+ * */
 
 
 //{ Driver Code Starts

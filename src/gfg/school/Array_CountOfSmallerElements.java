@@ -1,10 +1,10 @@
 package gfg.school;
 
 /*
-*
-* problem : https://practice.geeksforgeeks.org/problems/count-of-smaller-elements5947/1
-*
-* */
+ *
+ * problem : https://practice.geeksforgeeks.org/problems/count-of-smaller-elements5947/1
+ *
+ * */
 
 //{ Driver Code Starts
 //Initial Template for Java

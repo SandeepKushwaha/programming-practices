@@ -1,10 +1,10 @@
 package gfg.school;
 
 /*
-*
-* problem : https://practice.geeksforgeeks.org/problems/check-for-binary/1
-*
-* */
+ *
+ * problem : https://practice.geeksforgeeks.org/problems/check-for-binary/1
+ *
+ * */
 
 //{ Driver Code Starts
 

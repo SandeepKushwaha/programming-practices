@@ -1,10 +1,10 @@
 package gfg.school;
 
 /*
-*
-* problem : https://practice.geeksforgeeks.org/problems/series-ap5310/1
-*
-* */
+ *
+ * problem : https://practice.geeksforgeeks.org/problems/series-ap5310/1
+ *
+ * */
 
 //{ Driver Code Starts
 // Initial Template for Java
@@ -39,7 +39,7 @@ class NthTermOfAPSeriesSolution {
         // code here
         if (A1 >= -10_000 && A2 >= -10_000 && A1 <= 10_000 && A2 <= 10_000) {
             if (N >= 1 && N <= 1000) {
-                return A1 + (N -1) * (A2 - A1);
+                return A1 + (N - 1) * (A2 - A1);
             }
         }
         return 0;

@@ -1,10 +1,10 @@
 package gfg.school;
 
 /*
-*
-* problem : https://practice.geeksforgeeks.org/problems/swap-kth-elements5500/1
-*
-* */
+ *
+ * problem : https://practice.geeksforgeeks.org/problems/swap-kth-elements5500/1
+ *
+ * */
 
 //{ Driver Code Starts
 //Initial Template for Java
@@ -44,8 +44,8 @@ public class Array_SwapKthElements {
 class Array_SwapKthElementsSolution {
     void swapKth(int[] arr, int n, int k) {
         int temp = arr[k - 1];
-        arr[k-1] = arr[n-k];
-        arr[n-k] = temp;
+        arr[k - 1] = arr[n - k];
+        arr[n - k] = temp;
     }
 
 }

@@ -1,10 +1,10 @@
 package gfg.school;
 
 /*
-*
-* problem : https://practice.geeksforgeeks.org/problems/armstrong-numbers2727/1
-*
-* */
+ *
+ * problem : https://practice.geeksforgeeks.org/problems/armstrong-numbers2727/1
+ *
+ * */
 
 //{ Driver Code Starts
 //Initial Template for Java
@@ -16,8 +16,7 @@ import java.io.InputStreamReader;
 
 public class ArmstrongNumber {
     public static void main(String[] args) throws IOException {
-        BufferedReader read =
-                new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader read = new BufferedReader(new InputStreamReader(System.in));
         int t = Integer.parseInt(read.readLine());
         while (t-- > 0) {
             int n = Integer.parseInt(read.readLine());
@@ -32,16 +31,16 @@ public class ArmstrongNumber {
 
 //User function Template for Java
 class ArmstrongNumberSolution {
-    /*static*/ String armstrongNumber(int n){
+    /*static*/ String armstrongNumber(int n) {
         // code here
         int temp = n;
         int armstrong = 0;
         while (temp > 0) {
-            armstrong += Math.pow(temp%10, 3);
-            temp/=10;
+            armstrong += Math.pow(temp % 10, 3);
+            temp /= 10;
         }
 
-        if(armstrong == n) {
+        if (armstrong == n) {
             return "Yes";
         } else {
             return "No";

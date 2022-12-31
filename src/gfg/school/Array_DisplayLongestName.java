@@ -1,10 +1,10 @@
 package gfg.school;
 
 /*
-*
-* problem : https://practice.geeksforgeeks.org/problems/display-longest-name0853/1
-*
-* */
+ *
+ * problem : https://practice.geeksforgeeks.org/problems/display-longest-name0853/1
+ *
+ * */
 
 //{ Driver Code Starts
 

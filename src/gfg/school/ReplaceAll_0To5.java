@@ -27,7 +27,7 @@ public class ReplaceAll_0To5 {
 class ReplaceAll_0To5Solution {
     public /*static*/ int convertFive(int n) {
         if (n > 0 && n <= 10000) {
-            return  Integer.parseInt(Integer.toString(n).replace('0', '5'));
+            return Integer.parseInt(Integer.toString(n).replace('0', '5'));
 
             /* Solution by regular method i.e. calculation based on remainder of number
             int temp = n;
