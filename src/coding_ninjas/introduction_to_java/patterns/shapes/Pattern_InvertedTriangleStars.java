@@ -1,0 +1,25 @@
+package coding_ninjas.introduction_to_java.patterns.shapes;
+
+import java.util.Scanner;
+
+public class Pattern_InvertedTriangleStars {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int testCases = scanner.nextInt();
+        while (testCases-- > 0) {
+            int number = scanner.nextInt();
+            printInvertedTriangularTStars(number);
+        }
+    }
+
+    private static void printInvertedTriangularTStars(int number) {
+        if (number >= 0 && number <= 50) {
+            for (int i = 1; i <= number; i++) {
+                for (int space = number - i + 1; space >= 1; space--) {
+                    System.out.print("*");
+                }
+                System.out.println();
+            }
+        }
+    }
+}
