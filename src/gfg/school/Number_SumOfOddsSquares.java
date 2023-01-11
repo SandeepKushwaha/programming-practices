@@ -2,7 +2,7 @@ package gfg.school;
 
 /*
  *
- * problem : https://practice.geeksforgeeks.org/problems/small-factorial0854/1
+ * problem : https://practice.geeksforgeeks.org/problems/power-of-pow-odd-numbers1103/1
  *
  * */
 
@@ -13,30 +13,33 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Number_SmallFactorial {
+public class Number_SumOfOddsSquares {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int T = Integer.parseInt(br.readLine().trim());
         while (T-- > 0) {
-            int n = Integer.parseInt(br.readLine().trim());
-            SmallFactorialSolution ob = new SmallFactorialSolution();
-            long ans = ob.find_fact(n);
+            long n = Long.parseLong(br.readLine().trim());
+            SumOfOddsSquaresSolution ob = new SumOfOddsSquaresSolution();
+            long ans = ob.sum_of_square_oddNumbers(n);
             System.out.println(ans);
         }
     }
 }
+
 // } Driver Code Ends
 
 
 //User function Template for Java
 
-class SmallFactorialSolution {
-    public long find_fact(int n) {
+class SumOfOddsSquaresSolution {
+    public long sum_of_square_oddNumbers(long n) {
         // Code here
-        long fact = 1;
-        if (n > 1 && n <= 18) fact = n * find_fact(n - 1);
-        return fact;
+        long sum = 0;
+
+        for (int i = 1; i <= n * 2; i += 2) {
+            sum += Math.pow(i, 2);
+        }
+
+        return sum;
     }
 }
-
-
