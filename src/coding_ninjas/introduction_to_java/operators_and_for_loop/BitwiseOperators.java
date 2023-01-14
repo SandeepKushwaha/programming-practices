@@ -42,12 +42,29 @@ public class BitwiseOperators {
         System.out.println(x >> 2);
         System.out.println(x >> 3);
         System.out.println(x >> 4);
+        System.out.println();
+        System.out.println(-512 >> 1);
+        System.out.println(-512 >> 2);
+        System.out.println(-512 >> 3);
+        System.out.println(-512 >> 4);
+        System.out.println(-512 >> 8);
+        System.out.println(-512 >> 9);
+        System.out.println(-512 >> 10);
         System.out.println(2147483647 >> 1);
+        System.out.println();
+        System.out.println(-x >> -1);
+        System.out.println(-1000 >> -1);
         System.out.println();
         System.out.println(10 >> 1);
         System.out.println(10 >> 2); // int part only
 
 
+        System.out.println();
+
+        // unsigned right shift
+        System.out.println(x >>> 1);
+        System.out.println(x >>> 2);
+        System.out.println(-2147483648 >>> 1);
         System.out.println();
     }
 }
