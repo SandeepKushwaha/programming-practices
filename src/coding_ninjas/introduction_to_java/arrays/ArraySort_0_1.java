@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class FindDuplicate {
+public class ArraySort_0_1 {
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
     public static int[] takeInput() throws IOException {
@@ -22,29 +22,36 @@ public class FindDuplicate {
         return input;
     }
 
+    public static void printArray(int[] arr) {
+        for (int element : arr)
+            System.out.print(element + " ");
+
+        System.out.println();
+    }
 
     public static void main(String[] args) throws NumberFormatException, IOException {
         int t = Integer.parseInt(br.readLine().trim());
 
         while (t-- > 0) {
             int[] input = takeInput();
-            System.out.println(FindDuplicateSolution.duplicateNumber(input));
+            ArraySort_0_1_Solution.sortZeroesAndOne(input);
+            printArray(input);
         }
     }
 
-    private static class FindDuplicateSolution {
-        public static int duplicateNumber(int[] arr) {
-            // A Normal Approach for finding duplicate
-            for (int k : arr) {
-                short isFound = -1;
-                for (int i : arr) {
-                    if (k == i) {
-                        isFound++;
-                    }
-                }
-                if (isFound == 1) return k;
-            }
-            return 0;
+    private static class ArraySort_0_1_Solution {
+        public static void sortZeroesAndOne(int[] arr) {
+            //Your code goes here
+            int countZero = 0;
+            for (int i : arr)
+                if (i == 0)
+                    countZero++;
+
+            for (int i = 0; i < countZero; i++)
+                arr[i] = 0;
+
+            for (int i = countZero; i < arr.length; i++)
+                arr[i] = 1;
         }
     }
 }

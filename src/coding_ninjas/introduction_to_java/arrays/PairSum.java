@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class FindDuplicate {
+public class PairSum {
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
     public static int[] takeInput() throws IOException {
@@ -28,23 +28,21 @@ public class FindDuplicate {
 
         while (t-- > 0) {
             int[] input = takeInput();
-            System.out.println(FindDuplicateSolution.duplicateNumber(input));
+            int x = Integer.parseInt(br.readLine().trim());
+            System.out.println(PairSumSolution.pairSum(input, x));
         }
     }
 
-    private static class FindDuplicateSolution {
-        public static int duplicateNumber(int[] arr) {
-            // A Normal Approach for finding duplicate
-            for (int k : arr) {
-                short isFound = -1;
-                for (int i : arr) {
-                    if (k == i) {
-                        isFound++;
-                    }
-                }
-                if (isFound == 1) return k;
-            }
-            return 0;
+    static class PairSumSolution {
+        public static int pairSum(int[] arr, int x) {
+            int counter = 0;
+
+            for (int i = 0; i < arr.length; i++)
+                for (int j = i; j < arr.length; j++)
+                    if (i != j && (arr[i] + arr[j] == x))
+                        counter++;
+
+            return counter;
         }
     }
 }
