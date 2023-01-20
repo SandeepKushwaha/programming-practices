@@ -34,7 +34,18 @@ public class FindDuplicate {
 
     private static class FindDuplicateSolution {
         public static int duplicateNumber(int[] arr) {
-            // A Normal Approach for finding duplicate
+            // Well Optimized solution
+            int duplicate = 0;
+            for (int i = 0; i < arr.length; i++) {
+                if (arr[Math.abs(arr[i])] >= 0) {
+                    arr[Math.abs(arr[i])] = -arr[Math.abs(arr[i])];
+                } else {
+                    duplicate = Math.abs(arr[i]);
+                    break;
+                }
+            }
+            return duplicate;
+            /* A Normal Approach for finding duplicate
             for (int k : arr) {
                 short isFound = -1;
                 for (int i : arr) {
@@ -45,6 +56,7 @@ public class FindDuplicate {
                 if (isFound == 1) return k;
             }
             return 0;
+            */
         }
     }
 }

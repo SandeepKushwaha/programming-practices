@@ -35,7 +35,13 @@ public class FindUnique {
 
     private static class FindUniqueSolution {
         public static int findUnique(int[] arr) {
-            // Your code goes here.
+            // Well Optimized Code
+            int unique = 0;
+            for (int num : arr) {
+                unique ^= num;
+            }
+            return unique;
+            /* Your code goes here.
             for (int i : arr) {
                 int isFound = -1;
                 for (int j : arr) {
@@ -47,6 +53,7 @@ public class FindUnique {
                     return i;
             }
             return arr[0];
+            */
         }
     }
 }
