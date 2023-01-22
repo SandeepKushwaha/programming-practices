@@ -60,5 +60,21 @@ public class SecondLargestElement {
             return secondLargest;
     }
 
+    /* Another way to find the second-largest number from an Array
+    private static int secondLargestElement(int[] arr) {
+        int FirstLargest = Integer.MIN_VALUE;
+        int SecondLargest = Integer.MIN_VALUE;
 
+        for (int i : arr) {
+            if (FirstLargest < i)
+                FirstLargest = i;
+        }
+        for (int j : arr) {
+            if (FirstLargest > j && SecondLargest < j)
+                SecondLargest = j;
+        }
+
+        return SecondLargest;
+    }
+    */
 }
