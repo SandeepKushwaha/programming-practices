@@ -41,5 +41,21 @@ public class StringIntro {
         System.out.println(s1 == s2);
         System.out.println(s1 == s3);
         System.out.println(s1.equals(s3));
+        System.out.println();
+
+        System.out.println(str.indexOf('C'));
+        System.out.println(str.indexOf('o'));
+        System.out.println(s1.compareTo(s3));
+        System.out.println(s1.compareToIgnoreCase("Abc"));
+        System.out.println(s3.endsWith("c"));
+        System.out.println(s1.toLowerCase());
+        System.out.println(str + str2.toUpperCase());
+        System.out.println((str + str2).toUpperCase());
+
+        String replace = "I Love coding, where I like to code in Python.";
+        System.out.println(replace.replaceFirst("Python", "Java"));
+        System.out.println(replace.replaceAll("I", "He"));
+
+
     }
 }
