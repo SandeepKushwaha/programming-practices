@@ -14,10 +14,7 @@ public class PalindromeNumber {
             temp /= 10;
         }
 
-        if (reverse == number) {
-            System.out.println("true");
-        } else {
-            System.out.println("false");
-        }
+        if (reverse == number) System.out.println("true");
+        else System.out.println("false");
     }
 }

@@ -1,6 +1,6 @@
 package coding_ninjas.introduction_to_java.tests.test2;
 
-public class NumberStarPattern {
+public class NumberInOutStarPattern {
     public static void main(String[] args) {
         // Write your code here
         java.util.Scanner scanner = new java.util.Scanner(System.in);
