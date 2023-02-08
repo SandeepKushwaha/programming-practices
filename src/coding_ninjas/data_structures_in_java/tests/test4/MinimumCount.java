@@ -1,6 +1,15 @@
 package coding_ninjas.data_structures_in_java.tests.test4;
 
+import java.util.Scanner;
+
 public class MinimumCount {
+
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int num = s.nextInt();
+        System.out.println(minCount(num));
+    }
+
     public static int minCount(int n) {
         /* Your class should be named Solution
          * Don't write main().
