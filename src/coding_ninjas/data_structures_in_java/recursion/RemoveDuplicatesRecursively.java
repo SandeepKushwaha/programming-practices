@@ -1,4 +1,4 @@
-package coding_ninjas.introduction_to_java.recursion;
+package coding_ninjas.data_structures_in_java.recursion;
 
 import java.util.Scanner;
 

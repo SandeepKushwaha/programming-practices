@@ -1,4 +1,4 @@
-package coding_ninjas.introduction_to_java.recursion.assignments;
+package coding_ninjas.data_structures_in_java.recursion.assignments;
 
 import java.text.DecimalFormat;
 import java.util.Scanner;
