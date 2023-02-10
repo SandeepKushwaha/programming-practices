@@ -1,4 +1,4 @@
-package coding_ninjas.data_structures_in_java.oops.access_modifiers;
+package coding_ninjas.data_structures_in_java.oops_part_one.access_modifiers;
 
 public class AccessModifiersMain {
     public static void main(String[] args) {

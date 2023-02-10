@@ -1,4 +1,4 @@
-package coding_ninjas.data_structures_in_java.oops.getters_setters;
+package coding_ninjas.data_structures_in_java.oops_part_one.getters_setters;
 
 public class Student {
     String name;

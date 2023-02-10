@@ -1,4 +1,4 @@
-package coding_ninjas.data_structures_in_java.oops;
+package coding_ninjas.data_structures_in_java.oops_part_one;
 
 public class DynamicArray {
     private int[] data;

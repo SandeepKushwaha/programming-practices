@@ -1,4 +1,4 @@
-package coding_ninjas.data_structures_in_java.oops.intro;
+package coding_ninjas.data_structures_in_java.oops_part_one.intro;
 
 public class StudentMain {
     public static void main(String[] args) {

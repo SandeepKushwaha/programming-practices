@@ -1,4 +1,4 @@
-package coding_ninjas.data_structures_in_java.oops.final_keyword;
+package coding_ninjas.data_structures_in_java.oops_part_one.final_keyword;
 
 public class Student {
     private int rollNumber;

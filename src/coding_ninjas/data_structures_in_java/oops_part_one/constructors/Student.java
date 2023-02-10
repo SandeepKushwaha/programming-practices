@@ -1,4 +1,4 @@
-package coding_ninjas.data_structures_in_java.oops.constructors;
+package coding_ninjas.data_structures_in_java.oops_part_one.constructors;
 
 public class Student {
     private int rollNumber;

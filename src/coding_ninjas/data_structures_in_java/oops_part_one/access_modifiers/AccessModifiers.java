@@ -1,4 +1,4 @@
-package coding_ninjas.data_structures_in_java.oops.access_modifiers;
+package coding_ninjas.data_structures_in_java.oops_part_one.access_modifiers;
 
 public class AccessModifiers {
     private int privateVariable; // private modifier == accessible only in same class

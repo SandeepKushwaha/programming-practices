@@ -1,4 +1,4 @@
-package coding_ninjas.data_structures_in_java.oops.static_keyword;
+package coding_ninjas.data_structures_in_java.oops_part_one.static_keyword;
 
 public class Student {
     private int rollNumber;
