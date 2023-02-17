@@ -1,4 +1,4 @@
-package coding_ninjas.data_structures_in_java.oops_part_two.final_keyword;
+package coding_ninjas.data_structures_in_java.oops_part_three.final_keyword;
 
 // If class is final that means can not be extends any other class i.e. can't be has child class.
 public /*final*/ class Vehicle {

@@ -1,4 +1,4 @@
-package coding_ninjas.data_structures_in_java.oops_part_two.final_keyword;
+package coding_ninjas.data_structures_in_java.oops_part_three.final_keyword;
 
 public class Car extends Vehicle {
     int numberOfDoors;
