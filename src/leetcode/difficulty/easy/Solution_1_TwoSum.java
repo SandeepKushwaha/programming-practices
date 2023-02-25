@@ -38,15 +38,24 @@ public class Solution_1_TwoSum {
 
     /**
      *
-     * method maxProfit take following
+     * <p>method maxProfit use to calculate Given an array of integers numbers and an integer target,
+     * return indices of the two numbers such that they add up to target.
+     * <br/>
+     * and params and return as following
      * @param numbers    integer type array,
      * @param target     the target integer
-     * and
-     * return            integer array with length 2.
+     * and <br/>
+     * return integer array with length 2.
+     * </p>
      *
+     * <br/> <br/>
      * <p>
-     * Case : Two-pass Hash Table method        Time complexity : O(n)
-     * Case : brute force method                Time complexity : O(n^2)
+     * Case : Two-pass Hash Table method        Time complexity : O(n),
+     * </p>
+     * <p>
+     * Case : brute force method                Time complexity : O(n^2),
+     * and
+     * </p>
      * Case : Using Array method                Time complexity : O(n log n)
      * </p>
      *
