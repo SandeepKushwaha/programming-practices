@@ -27,11 +27,19 @@ public class Solution_9_PalindromeNumber {
      *
      * */
     public boolean isPalindrome(int x) {
+        // Using String.
+        String str = String.valueOf(x);
+        for (int i = 0, j = str.length() - 1; i < str.length()/2; i++, j--)
+            if (str.charAt(i) != str.charAt(j))
+                return false;
+        return true;
+        /* Using Integer.
         int n = x, reverse = 0;
         while (n != 0) {
             reverse = (reverse * 10) + (n % 10);
             n /= 10;
         }
         return x == reverse;
+        */
     }
 }
