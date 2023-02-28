@@ -4,15 +4,17 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-/*
- * Problem Name: Two Sum
- *
- * Problem Link: https://leetcode.com/problems/two-sum/
- *
- * Difficulty: Easy
- *
- * Tags:    Array
+/**
+ * <p>
+ * <b>Problem Name:</b> Two Sum
+ * <br/>
+ * <b>Problem Link:</b> <a href="https://leetcode.com/problems/two-sum/">Two Sum</a>
+ * <br/>
+ * <b>Difficulty:</b> Easy
+ * <br/>
+ * <b>Tags:</b>    Array,
  *          Hash Table
+ * </p>
  *
  * */
 public class Solution_1_TwoSum {

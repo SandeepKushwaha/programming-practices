@@ -1,15 +1,16 @@
 package leetcode.difficulty.easy;
 
-/*
- * Problem Name: Best time to buy and sell stock
- *
- * Problem Link: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
- *
- * Difficulty: Easy
- *
- * Tags:    Array
- *          Math
- *
+/**
+ * <p>
+ * <b>Problem Name:</b> Best time to buy and sell stock
+ * <br/>
+ * <b>Problem Link:</b> <a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/">Best time to buy and sell stock</a>
+ * <br/>
+ * <b>Difficulty:</b> Easy
+ * <br/>
+ * <b>Tags:</b>    Array,
+ *              Math
+ * </p>
  * */
 
 public class Solution_121_Array_BestTimeBuySellStock {

@@ -1,13 +1,15 @@
 package leetcode.difficulty.easy;
 
-/*
- * Problem Name: Palindrome Number
- *
- * Problem Link: https://leetcode.com/problems/palindrome-number/
- *
- * Difficulty: Easy
- *
- * Tags:    Math
+/**
+ * <p>
+ * <b>Problem Name:</b> Palindrome Number
+ * <br/>
+ * <b>Problem Link:</b> <a href="https://leetcode.com/problems/palindrome-number/">Palindrome Number</a>
+ * <br/>
+ * <b>Difficulty:</b> Easy
+ * <br/>
+ * <b>Tags:</b>    Math,
+ * </p>
  *
  * */
 
