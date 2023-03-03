@@ -13,16 +13,16 @@ import java.util.Stack;
  * <b>Difficulty:</b> Medium<br/>
  *
  * <b>Tags:</b>     Array,
- *                  Stack,
- *                  Monotonic Stack,
+ * Stack,
+ * Monotonic Stack,
  * </p>
  */
 public class Solution_739_DailyTemperatures {
     public static void main(String[] args) {
         Solution_739_DailyTemperatures solve = new Solution_739_DailyTemperatures();
-        int[] input_case1 = {73,74,75,71,69,72,76,73};
-        int[] input_case2 = {30,40,50,60};
-        int[] input_case3 = {30,60,90};
+        int[] input_case1 = {73, 74, 75, 71, 69, 72, 76, 73};
+        int[] input_case2 = {30, 40, 50, 60};
+        int[] input_case3 = {30, 60, 90};
 
         ArrayList<int[]> testCases = new ArrayList<>();
         testCases.add(input_case1);
@@ -33,7 +33,16 @@ public class Solution_739_DailyTemperatures {
             int[] result = solve.dailyTemperatures(test);
             System.out.println(Arrays.toString(result));
         }
+
+        System.out.println();
+        // Using Array prints
+        for (int[] test : testCases) {
+            System.out.println(
+                    Arrays.toString(solve.dailyTemperaturesUsingArray(test))
+            );
+        }
     }
+
     /**
      * <p>
      * Given an array of integers `temperatures` represents the daily temperatures,
@@ -59,12 +68,11 @@ public class Solution_739_DailyTemperatures {
      *
      *
      * <b>Constraints:</b> <br/>
-     *
+     * <p>
      * 1 <= temperatures.length <= 10^5 <br/>
      * 30 <= temperatures[i] <= 100 <br/>
      * </p>
-     *
-     * */
+     */
     public int[] dailyTemperatures(int[] temperatures) {
         int length = temperatures.length;
         int[] resultDailyTemperatures = new int[length];
@@ -81,14 +89,15 @@ public class Solution_739_DailyTemperatures {
 
         return resultDailyTemperatures;
     }
+
     /**
      * <p>
      * static Node class with following members: <br/>
-     *      temperature, <br/>
-     *      dailyTemperature, <br/>
-     *      index <br/>
+     * temperature, <br/>
+     * dailyTemperature, <br/>
+     * index <br/>
      * </p>
-     * */
+     */
 
     static class Node {
         int temperature, dailyTemperature, index;
@@ -99,4 +108,23 @@ public class Solution_739_DailyTemperatures {
             this.index = index;
         }
     }
+
+    public int[] dailyTemperaturesUsingArray(int[] temperatures) {
+        int largest = 0;
+        int[] result = new int[temperatures.length];
+        for (int i = temperatures.length - 1; i >= 0; i--) {
+            if (largest <= temperatures[i]) {
+                largest = temperatures[i];
+            } else {
+                int next = i + 1;
+                while (temperatures[i] >= temperatures[next]) {
+                    next += result[next];
+                }
+                result[i] = next - i;
+            }
+        }
+        return result;
+    }
+
+
 }
