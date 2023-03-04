@@ -4,7 +4,7 @@ package leetcode.difficulty.hard;
  * <p>
  * <b>Problem Name:</b> Edit Distance <br/>
  *
- * <b>Problem Link:</b> <a href="https://leetcode.com/problems/roman-to-integer/">Roman to Integer</a><br/>
+ * <b>Problem Link:</b> <a href="https://leetcode.com/problems/edit-distance/">Edit Distance</a><br/>
  *
  * <b>Difficulty:</b> Hard<br/>
  *
