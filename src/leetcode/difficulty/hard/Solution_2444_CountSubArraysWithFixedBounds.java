@@ -24,6 +24,10 @@ public class Solution_2444_CountSubArraysWithFixedBounds {
 
         System.out.println(solve.countSubarrays(numbers1, 1, 5));
         System.out.println(solve.countSubarrays(numbers2, 1, 1));
+
+        System.out.println();
+        System.out.println(solve.countSubarraysOptimised(numbers1, 1, 5));
+        System.out.println(solve.countSubarraysOptimised(numbers2, 1, 1));
     }
 
     /**
@@ -94,5 +98,21 @@ public class Solution_2444_CountSubArraysWithFixedBounds {
         }
         return res;
         */
+    }
+
+    public long countSubarraysOptimised(int[] nums, int minK, int maxK) {
+        long res = 0;
+
+        int min=-1, max=-1, left = -1;
+
+        for (int i=0; i<nums.length; i++) {
+            if (nums[i]<minK || nums[i] > maxK) {
+                left = min = max = i;
+            }
+            min = nums[i]==minK ? i : min;
+            max = nums[i]==maxK ? i : max;
+            res += Math.min(max, min)-left;
+        }
+        return res;
     }
 }
