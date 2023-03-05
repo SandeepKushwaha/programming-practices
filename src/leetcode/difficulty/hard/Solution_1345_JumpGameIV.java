@@ -14,7 +14,8 @@ import java.util.*;
  *                  Hash Table,
  *                  Breadth-First Search, <br/>
  *
- * <b>Deep Dive Study Links:</b>      <a href="https://www.youtube.com/watch?v=oDqjPvD54Ss">Breadth First Search grid shortest path | Graph Theory</a>
+ * <b>Deep Dive Study Links:</b>      <a href="https://www.youtube.com/watch?v=oDqjPvD54Ss">Breadth First Search grid shortest path | Graph Theory</a> <br/>
+ *                                    <a href="https://www.youtube.com/playlist?list=PLDV1Zeh2NRsB6SWUrDFW2RmDotAfPbeHu">Data structures by WilliamFiset</a>
  *
  * </p>
  */
