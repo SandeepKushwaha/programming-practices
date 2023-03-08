@@ -68,6 +68,14 @@ public class Solution_875_KokoEatingBananas {
         System.out.println(solve.minEatingSpeed(test_piles1, 8));
         System.out.println(solve.minEatingSpeed(test_piles2, 5));
         System.out.println(solve.minEatingSpeed(test_piles3, 6));
+        // Optimized test code runner
+        System.out.println();
+        KokoEatingBananasOptimizedSolution optimizedSolution = new Solution_875_KokoEatingBananas.KokoEatingBananasOptimizedSolution();
+        System.out.println(optimizedSolution.minEatingSpeed(test_piles1, 8));
+        System.out.println(optimizedSolution.minEatingSpeed(test_piles2, 5));
+        System.out.println(optimizedSolution.minEatingSpeed(test_piles3, 6));
+        int[] oneLengthPiles = {312884470};
+        System.out.println(optimizedSolution.minEatingSpeed(oneLengthPiles, 968709470));
     }
     /**
      * Finds the minimum integer k such that Koko can eat all the bananas within h hours.
@@ -80,6 +88,9 @@ public class Solution_875_KokoEatingBananas {
         int right = 0;
         for (int pile : piles) {
             right = Math.max(right, pile);
+        }
+        if (piles.length == 1) {
+            return (int) Math.ceil((double) piles[0] / h);
         }
         while (left < right) {
             int mid = left + (right - left) / 2;
@@ -101,13 +112,50 @@ public class Solution_875_KokoEatingBananas {
      */
     private boolean canEatAll(int[] piles, int h, int k) {
         int totalHours = 0;
-
         for (int pile : piles) {
             totalHours += (pile + k - 1) / k;
-            if (totalHours > h)
-                return false;
         }
+        return totalHours <= h;
+    }
 
-        return true;
+    static class KokoEatingBananasOptimizedSolution {
+        public int minEatingSpeed(int[] piles, int h) {
+            int n = piles.length;
+            long total = 0;
+            for(int i : piles){
+                total += i;
+            }
+            int l = Math.max(1, lowerBound(total, h));
+            int r = upperBound(n, h, total);
+            while (l < r){
+                int mid = (l + r) / 2;
+                if(canEat(piles, mid, h)){
+                    r = mid;
+                }else{
+                    l = mid + 1;
+                }
+            }
+            return r;
+        }
+        public static int upperBound(int piles,int h,long total){
+            total -= (piles - 1);
+            h -= (piles - 1);
+            return (int) Math.ceil(total * 1.0 / h);
+        }
+        public static int lowerBound(long total,int h){
+            return (int) Math.floor(total*1.0/h);
+        }
+        public boolean canEat(int []piles,int k,int h){
+            int total = 0;
+            for (int pile : piles) {
+                total += pile / k + (pile % k != 0 ? 1 : 0);
+                if (total > h) {
+                    return false;
+                }
+            }
+
+            return true;
+
+        }
     }
 }
